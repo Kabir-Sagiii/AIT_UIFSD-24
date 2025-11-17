@@ -1,0 +1,23 @@
+h1 {
+  color: blue;
+}
+p {
+  color: lightgreen;
+  background-color: black;
+  padding: 50px;
+}
+
+#container {
+  color: lawngreen;
+  background-color: black;
+  padding: 20px;
+}
+
+.redtheme {
+  background-color: red;
+  color: white;
+}
+
+.borderColor {
+  border: 7px solid black;
+}

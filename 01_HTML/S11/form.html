@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      form {
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap;
+      }
+      div {
+        box-shadow: 0 0 10px black;
+        padding: 30px;
+        width: 300px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Forms in HTML</h2>
+    <form>
+      <div>
+        <h2>Text box</h2>
+        <input
+          placeholder="username"
+          minlength="3"
+          value="Kabir"
+          maxlength="5"
+        />
+      </div>
+
+      <div>
+        <h2>Password Box</h2>
+        <input type="password" disabled placeholder="password" size="20" />
+      </div>
+
+      <div>
+        <h2>Email</h2>
+        <input type="email" placeholder="email" required />
+      </div>
+
+      <div>
+        <h2>Radio</h2>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <h2>Checckbox</h2>
+        <input type="checkbox" id="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" />
+        <label for="css">CSS</label>
+      </div>
+
+      <div>
+        <h2>Calender</h2>
+        <input type="date" />
+      </div>
+      <div>
+        <h2>Timer</h2>
+        <input type="time" />
+      </div>
+
+      <div>
+        <h2>Number</h2>
+        <input type="number" />
+      </div>
+
+      <div>
+        <h2>Button</h2>
+        <input type="button" value="Logout" />
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+
+      <div>
+        <h2>Dropdown</h2>
+        <select>
+          <option>hyd</option>
+          <option>pune</option>
+          <option>delhi</option>
+          <option>bhopal</option>
+        </select>
+      </div>
+
+      <div>
+        <h2>Text area</h2>
+        <textarea></textarea>
+      </div>
+
+      <div>
+        <h2>Progress</h2>
+        <progress value="40" min="1" max="100"></progress>
+      </div>
+
+      <div>
+        <h2>Data List</h2>
+        <input type="text" list="mylist" />
+        <datalist id="mylist">
+          <option>react js</option>
+          <option>react native</option>
+          <option>react</option>
+          <option>Angular</option>
+          <option>html</option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
