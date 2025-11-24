@@ -1,0 +1,42 @@
+#container {
+  width: 1200px;
+  height: 110px;
+
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex-Item img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+.flex-Item h3 {
+  text-shadow: 0 0 20px red;
+}
+.flex-Item {
+  text-align: center;
+}
+#products {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.card {
+  width: 290px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px green;
+}
+.card h2 {
+  color: green;
+}
+.card button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 10px black;
+}
