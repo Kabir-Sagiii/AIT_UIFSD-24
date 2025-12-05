@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @media (max-width: 576px) {
+        h1 {
+          color: red;
+        }
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      @media (min-width: 577px) and (max-width: 768px) {
+        h1 {
+          color: blue;
+        }
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          box-shadow: 0 0 10px blue;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 991px) and (min-height: 400px) and (max-height: 500px) {
+        h1 {
+          color: coral;
+        }
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          box-shadow: 0 0 10px black;
+        }
+      }
+
+      @media (width: 700px) {
+        h1 {
+          background-color: black;
+          color: white;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to Media Queries</h1>
+    <img
+      src="https://wallpapers.com/images/hd/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig.jpg"
+      alt=""
+    />
+  </body>
+</html>

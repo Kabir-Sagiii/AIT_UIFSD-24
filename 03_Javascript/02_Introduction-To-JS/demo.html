@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: green;
+      }
+      button {
+        padding: 7px 15px;
+      }
+    </style>
+    <script>
+      function f1() {
+        document.querySelector("h1").style.color = "red";
+        document.querySelector("h1").textContent = "Hello Javascript";
+        var p = document.createElement("p");
+        p.textContent = ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+    minus maiores molestias optio, expedita voluptatibus obcaecati? Doloribus
+    voluptas facilis repudiandae rem temporibus adipisci, eius nemo optio
+    tempore suscipit recusandae incidunt.`;
+
+        p.onclick = function () {
+          p.remove();
+        };
+
+        document.querySelector("body").appendChild(p);
+      }
+
+      function f2() {
+        document.querySelector("h1").style.color = "green";
+      }
+      function f3() {
+        document.querySelector("h1").style.color = "red";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 onmouseenter="f2()" onmouseleave="f3()">Welcome to Javascript !!!</h1>
+
+    <button onclick="f1()">Submit</button>
+  </body>
+</html>
