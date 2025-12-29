@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //JS Code
+
+      function changeTitle() {
+        //how to access dom element
+        const h3DomElement = document.querySelector("h3");
+
+        //how to modify dom element
+        h3DomElement.textContent = "Hello, Javascript";
+        h3DomElement.style.color = "Green";
+
+        const h1DomElement = document.querySelector("h1");
+        h1DomElement.textContent = "DOM Concept";
+        h1DomElement.style.color = "Blue";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Document Object Model</h1>
+    <h3>Welcome to Dynamic UI</h3>
+    <button onclick="changeTitle()">Submit</button>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //JS Code
+
+      function changeTitle() {
+        var count = 0;
+        const h3DomElement = document.querySelector("h3");
+
+        const h1DomElement = document.querySelector("h1");
+
+        for (var key in h3DomElement.style) {
+          console.log(key);
+          count++;
+        }
+
+        console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Document Object Model</h1>
+    <h3>Welcome to Dynamic UI</h3>
+    <button onclick="changeTitle()">Submit</button>
+  </body>
+</html>
