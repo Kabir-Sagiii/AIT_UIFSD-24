@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeToNode() {
+        var img = document.getElementById("logo");
+        img.src =
+          "https://innovationyourself.com/wp-content/uploads/2020/08/nodejs-logo.png";
+        // img.width = "100";
+        // img.height = "100";
+      }
+
+      function changeToReact() {
+        var img = document.getElementById("logo");
+        img.src =
+          "https://glints.com/id/lowongan/wp-content/uploads/2020/10/logo-reactjs-1024x584.jpg";
+      }
+    </script>
+  </head>
+
+  <body>
+    <img
+      id="logo"
+      width="500"
+      height="300"
+      src="https://glints.com/id/lowongan/wp-content/uploads/2020/10/logo-reactjs-1024x584.jpg"
+      onmouseenter="changeToNode()"
+      onmouseleave="changeToReact()"
+    />
+
+    <br /><br />
+
+    <input checked type="radio" name="tech" onchange="changeToReact()" />
+    <label>React JS</label>
+
+    <input type="radio" name="tech" onchange="changeToNode()" />
+    <label>NodeJS</label>
+  </body>
+</html>

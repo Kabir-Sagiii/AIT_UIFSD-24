@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getParas() {
+        var doms = document.getElementsByClassName("red");
+        console.log(doms);
+
+        for (var domElement of doms) {
+          domElement.style.color = "white";
+          domElement.style.backgroundColor = "black";
+          domElement.style.padding = "20px";
+          domElement.style.margin = "10px";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur odio,
+      officia voluptatum temporibus amet, debitis natus sapiente a assumenda
+      accusamus perspiciatis cupiditate officiis magnam iste quo! Nobis dolorum
+      reiciendis officiis!
+    </p>
+    <p class="red">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate modi
+      quas ex aut tenetur cupiditate quisquam ipsa earum eveniet voluptatum,
+      itaque molestias repellendus dolorem totam quos vel. Deserunt debitis
+      eveniet error dicta culpa excepturi voluptatibus maiores, ducimus natus
+      quidem! Asperiores magnam animi unde laudantium ut excepturi commodi
+      ratione. Officia dolores optio maxime labore possimus saepe blanditiis
+      autem nostrum debitis deleniti.
+    </p>
+    <p class="red">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nihil sequi
+      nostrum alias ipsum, necessitatibus libero placeat ipsa iure beatae maxime
+      tempore numquam ad, tenetur ipsam eos voluptas autem. Doloremque mollitia
+      quia quo qui esse officia veritatis sint! Deleniti facere maiores vero
+      esse tenetur in laboriosam, aliquam voluptatem dolore quos ex molestiae
+      culpa, non numquam eligendi perferendis facilis cum, ratione error
+      voluptatum. Nihil ex tenetur optio aliquam earum quam quos enim laboriosam
+      iusto quod neque unde animi dolor architecto laborum possimus ab, commodi
+      molestiae numquam at aperiam sit? Sunt, enim!
+    </p>
+
+    <button onclick="getParas()">Change Styles</button>
+  </body>
+</html>
