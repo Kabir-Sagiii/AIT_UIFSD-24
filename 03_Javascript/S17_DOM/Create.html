@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createImage() {
+        const imgDomElement = document.createElement("img");
+        imgDomElement.src =
+          "https://images.woodenstreet.de/image/data/fabric-sofa/Mellisa-fabric-sofa/new-logo/teak/1.jpg";
+        imgDomElement.width = "300";
+        imgDomElement.height = "300";
+        imgDomElement.style.margin = "20px";
+
+        var divDomElement = document.getElementById("allImages");
+        divDomElement.appendChild(imgDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Create DOM element</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi facere
+      magnam, ab exercitationem vitae doloribus expedita voluptatibus iusto
+      atque. Officiis exercitationem iste voluptatibus rerum, quos ipsam magnam,
+      soluta in fuga perspiciatis ipsa odit maiores impedit repudiandae. Laborum
+      sequi doloribus architecto facere reiciendis quidem ex nesciunt odio
+      porro, quod, ullam aut officia expedita facilis voluptatem numquam
+      excepturi consequuntur tempore, ratione dolor! Pariatur voluptatum quia
+      voluptatem facilis provident neque fuga fugiat velit adipisci ut ad
+      assumenda enim culpa laborum odio, et deserunt tempore debitis
+      exercitationem ullam, officia repellendus architecto sapiente. Earum ea
+      impedit non fugiat dignissimos nobis facere delectus nostrum in quos.
+    </p>
+
+    <button onclick="createImage()">Create Image</button>
+
+    <div id="allImages"></div>
+  </body>
+</html>

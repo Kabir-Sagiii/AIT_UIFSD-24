@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createImage() {
+        const imgDomElement = document.createElement("img");
+        imgDomElement.src =
+          "https://images.woodenstreet.de/image/data/fabric-sofa/Mellisa-fabric-sofa/new-logo/teak/1.jpg";
+        imgDomElement.width = "300";
+        imgDomElement.height = "300";
+
+        var h3DomElement = document.createElement("h3");
+        h3DomElement.textContent = "Sofa Set";
+        h3DomElement.style.color = "blue";
+        h3DomElement.style.marginBottom = "20px";
+
+        var div = document.createElement("div");
+
+        div.style.textAlign = "center";
+        div.style.width = "300px";
+        div.style.boxShadow = "0 0 10px black";
+        div.style.margin = "20px";
+        div.style.padding = "5px";
+        div.appendChild(imgDomElement);
+        div.appendChild(h3DomElement);
+
+        div.onclick = function () {
+          div.remove();
+        };
+
+        var mainDiv = document.getElementById("allImages");
+        mainDiv.style.display = "flex";
+        mainDiv.style.flexWrap = "wrap";
+        mainDiv.style.justifyContent = "space-evenly";
+        mainDiv.appendChild(div);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Create DOM element</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi facere
+      magnam, ab exercitationem vitae doloribus expedita voluptatibus iusto
+      atque. Officiis exercitationem iste voluptatibus rerum, quos ipsam magnam,
+      soluta in fuga perspiciatis ipsa odit maiores impedit repudiandae. Laborum
+      sequi doloribus architecto facere reiciendis quidem ex nesciunt odio
+      porro, quod, ullam aut officia expedita facilis voluptatem numquam
+      excepturi consequuntur tempore, ratione dolor! Pariatur voluptatum quia
+      voluptatem facilis provident neque fuga fugiat velit adipisci ut ad
+      assumenda enim culpa laborum odio, et deserunt tempore debitis
+      exercitationem ullam, officia repellendus architecto sapiente. Earum ea
+      impedit non fugiat dignissimos nobis facere delectus nostrum in quos.
+    </p>
+
+    <button onclick="createImage()">Create Image</button>
+
+    <div id="allImages"></div>
+  </body>
+</html>
