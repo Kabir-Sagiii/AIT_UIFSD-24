@@ -3,3 +3,15 @@ Operators
 https://www.youtube.com/live/22wTA3vI_jQ?si=YpjPsbmZzxDP80de
 
 https://www.youtube.com/live/V7fhastQIPc?si=kQXRy8vxzF2AZa0q
+
+
+
+Promise Video:
+-------------------
+https://youtu.be/ialfZyeAbaY?si=z2SeCPNR1UIXRZTv
+
+
+
+Strings in JavaScript
+---------------------------
+https://www.youtube.com/watch?v=y1skr4DXPnI&list=PLRflkniRZt7_W3qhw0IInqxg7cOvMPPVz&index=2
