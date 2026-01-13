@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createButton() {
+        const btnDom = document.createElement("button");
+        btnDom.textContent = "JS Button";
+
+        btnDom.onclick = function () {
+          const img = document.createElement("img");
+          img.src =
+            "https://png.pngtree.com/png-vector/20190629/ourlarge/pngtree-business-people-avatar-icon-user-profile-free-vector-png-image_1527664.jpg";
+          img.width = "200";
+          img.height = "200";
+
+          document.getElementById("root").appendChild(img);
+        };
+
+        document.getElementById("root").appendChild(btnDom);
+      }
+    </script>
+  </head>
+
+  <body onload="createButton()">
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paragraph Element</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script>
+      const p_ReactElement = React.createElement(
+        "p",
+        {
+          id: "para",
+          className: "c1",
+        },
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laborum facilis
+  natus neque, amet a praesentium reiciendis ad sit dolore. Optio, ullam eos vel
+  porro minima commodi ut, odit in quasi distinctio aperiam, harum id debitis!
+  Esse impedit corrupti nesciunt.`
+      );
+
+      ReactDOM.render(p_ReactElement, document.getElementById("container"));
+    </script>
+  </body>
+</html>
