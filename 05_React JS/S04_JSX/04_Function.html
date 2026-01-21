@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #containerDiv {
+        width: 800px;
+        padding: 20px;
+        box-shadow: 0 0 10px purple;
+        margin: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createContainer(title, description) {
+        return (
+          <div id="containerDiv">
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        [
+          createContainer(
+            "HTML INFORMATION",
+            `HTML is the foundational markup language of the web, used to structure content on websites. It defines elements like headings, paragraphs, images, links, and forms, enabling browsers to display information consistently. HTML works with CSS and JavaScript to create interactive, accessible, and responsive web pages for modern digital communication worldwide.
+`,
+          ),
+          createContainer(
+            "CSS INFORMATION",
+            `CSS (Cascading Style Sheets) is used to control the visual appearance of web pages. It styles HTML elements by defining colors, fonts, layouts, spacing, and responsiveness. CSS enables consistent design across pages and devices, improving user experience and allowing developers to separate content from presentation efficiently.
+`,
+          ),
+        ],
+        document.getElementById("root"),
+      );
+    </script>
+  </body>
+</html>

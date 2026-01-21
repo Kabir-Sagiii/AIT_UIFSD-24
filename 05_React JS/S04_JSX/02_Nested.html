@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var mystyle = {
+        color: "red",
+      };
+
+      var container = (
+        <div id="div-container">
+          <h1 style={{ color: "green" }}>JSX Element</h1>
+          <ol type="a" style={mystyle}>
+            <li>Heading </li>
+            <li>Paragraph</li>
+            <li>Table</li>
+          </ol>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

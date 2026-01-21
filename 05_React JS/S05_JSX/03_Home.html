@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Functional Component</title>
+    <link rel="stylesheet" href="./02_Home.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Header(x) {
+        return <div id="header"></div>;
+      }
+
+      function Main(y) {
+        return <div id="main"></div>;
+      }
+
+      function Footer() {
+        return <div id="footer"></div>;
+      }
+
+      function App(props) {
+        return (
+          <div id="app">
+            <Header />
+            <Main> </Main>
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

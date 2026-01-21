@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #containerDiv {
+        width: 800px;
+        padding: 20px;
+        box-shadow: 0 0 10px purple;
+        margin: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var container = (
+        <div id="containerDiv">
+          <h1>HTML Information</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores id
+            voluptatibus voluptas? Ipsum possimus, totam omnis voluptatum
+            exercitationem ad odit quisquam earum sunt cum a nam fugit esse,
+            temporibus animi vero deleniti iure, fuga placeat eligendi cumque
+            expedita blanditiis beatae. Repellat iste eaque consectetur
+            quibusdam magni architecto aperiam qui saepe!
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(
+        [container, container, container],
+        document.getElementById("root"),
+      );
+    </script>
+  </body>
+</html>
