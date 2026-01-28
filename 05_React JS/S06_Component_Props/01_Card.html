@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./01_Card.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Card({ url, username, desc }) {
+        // props = {username:"Raj Verma",desc:"-----",url:"----"}
+        return (
+          <div className="card">
+            <img src={url} width="100%" height="210" alt="" />
+            <h3>{username}</h3>
+            <p>{desc}</p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="card-container">
+            <Card
+              username={"Raj Verma"}
+              url={
+                "https://i.pinimg.com/originals/b8/5e/9d/b85e9df9e9b75bcce3a767eb894ef153.jpg"
+              }
+              desc={
+                "Active users who explore features, provide feedback, and engage consistently daily"
+              }
+            />
+
+            <Card
+              username={"Aishwariya Khanna"}
+              url={
+                "https://static.vecteezy.com/system/resources/previews/025/474/309/large_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg"
+              }
+              desc={
+                "New users learning basics, asking questions, and discovering value gradually online"
+              }
+            />
+
+            <Card
+              url={
+                "https://static.vecteezy.com/system/resources/previews/048/378/864/non_2x/a-young-happy-pretty-smiling-professional-business-woman-free-photo.jpg"
+              }
+              username={"Priya Verma"}
+              desc={
+                "Power users maximizing efficiency, customizing workflows, and influencing product direction strategically"
+              }
+            />
+
+            <Card
+              username={"Sneha Jadhav"}
+              desc={
+                "Occasional users logging in infrequently, completing tasks, then leaving quietly afterwards"
+              }
+              url={
+                "https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
